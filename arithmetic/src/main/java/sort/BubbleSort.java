@@ -3,14 +3,17 @@ package sort;
 /**
  * Created by sunxianping on 2019-11-15.
  * 冒泡排序
+ * 时间复杂度 O(n2)
+ * 额外空间复杂度O(1)
+ *
  */
 public class BubbleSort {
 
-    public static int[] sort(int[] array){
-        for(int i=0;i<array.length;i++) {
-            for(int j=i;j<array.length;j++) {
-                if(array[j] < array[i]){
-                    Utils.swap(array, i , j);
+    public static int[] sort(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i; j < array.length; j++) {
+                if (array[j] < array[i]) {
+                    Utils.swap(array, i, j);
                 }
             }
         }
